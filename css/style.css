@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #0E0E10;
+}
+
+.center{
+  width: 80%;
+}
+
+.slogan-project{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.slogan-project .center h1{
+  color: white;
+  font-size: 25px;
+  font-family: 'Noto Sans Bengali', sans-serif;
+  margin-left: 30px;
+}
+
+
+.content-main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-main .center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content-main .content-table{
+  width: 55%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics{
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 265px;
+  height: 100%;
+
+  background-color: #151517;
+  border-radius: 10px 10px 0 0;
+}
+
+.data p{
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+
+.data-teams{
+  width: 100%;
+  height: auto;
+}
+
+.content-table .line-team{
+  background-color: #1B1B1E;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px 0 10px 10px;
+  margin-bottom: 15px;
+  transition: 1s;
+}
+
+.line-team:hover{
+  background-color: #151517;
+}
+
+.line-team .pos{
+  background-color: #151517;
+  width: 60px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.line-team .pos h1{
+  color: white;
+  font-size: 20px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 100;
+}
+
+.line-team .name-team{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.name-team .image{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image img{
+  margin-top: 25%;
+  width: 100px;
+  height: 100px;
+}
+
+.name-team .name{
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name h1{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+
+.line-team .stats-team{
+  width: 252px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.stats-team .stts{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.stts p{
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.content-main .content-topsoccer{
+  width: 40%;
+  height: 550px;
+  background-color: green;
+}
+
+
+
