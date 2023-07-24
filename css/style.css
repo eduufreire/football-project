@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html{
-  background-color: #0E0E10;
+html {
+  background-color: #0e0e10;
 }
 
-.center{
+.center {
   width: 80%;
 }
 
-.slogan-project{
+.slogan-project {
   width: 100%;
   height: 70px;
   display: flex;
@@ -25,16 +25,14 @@ html{
   justify-content: center;
 }
 
-
-.slogan-project .center h1{
+.slogan-project .center h1 {
   color: white;
   font-size: 25px;
-  font-family: 'Noto Sans Bengali', sans-serif;
+  font-family: "Noto Sans Bengali", sans-serif;
   margin-left: 30px;
 }
 
-
-.content-main{
+.content-main {
   width: 100%;
   height: auto;
   display: flex;
@@ -43,22 +41,22 @@ html{
   justify-content: center;
 }
 
-.content-main .center{
+.content-main .center {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.content-main .content-table{
+.content-main .content-table {
   width: 55%;
-  height: 600px;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.statistics{
+.statistics {
   width: 100%;
   height: 35px;
   display: flex;
@@ -67,7 +65,7 @@ html{
   justify-content: flex-end;
 }
 
-.data{
+.data {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -80,19 +78,19 @@ html{
   border-radius: 10px 10px 0 0;
 }
 
-.data p{
+.data p {
   color: white;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 20px;
 }
 
-.data-teams{
+.data-teams {
   width: 100%;
   height: auto;
 }
 
-.content-table .line-team{
-  background-color: #1B1B1E;
+.content-table .line-team {
+  background-color: #1b1b1e;
   width: 100%;
   height: 50px;
 
@@ -105,11 +103,11 @@ html{
   transition: 1s;
 }
 
-.line-team:hover{
+.line-team:hover {
   background-color: #151517;
 }
 
-.line-team .pos{
+.line-team .pos {
   background-color: #151517;
   width: 60px;
   height: 100%;
@@ -120,21 +118,21 @@ html{
   border-radius: 10px 0 0 10px;
 }
 
-.line-team .pos h1{
+.line-team .pos h1 {
   color: white;
   font-size: 20px;
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   font-weight: 100;
 }
 
-.line-team .name-team{
+.line-team .name-team {
   width: 60%;
   height: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.name-team .image{
+.name-team .image {
   width: 30%;
   height: 100%;
   display: flex;
@@ -143,13 +141,13 @@ html{
   overflow: hidden;
 }
 
-.image img{
+.image img {
   margin-top: 25%;
   width: 100px;
   height: 100px;
 }
 
-.name-team .name{
+.name-team .name {
   width: auto;
   height: 100%;
   display: flex;
@@ -157,16 +155,15 @@ html{
   justify-content: center;
 }
 
-.name h1{
-  font-family: 'Roboto', sans-serif;
+.name h1 {
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 25px;
   letter-spacing: 3px;
   font-weight: 300;
 }
 
-
-.line-team .stats-team{
+.line-team .stats-team {
   width: 252px;
   height: 100%;
   display: flex;
@@ -175,7 +172,7 @@ html{
   flex-direction: row;
 }
 
-.stats-team .stts{
+.stats-team .stts {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -184,29 +181,250 @@ html{
   height: 100%;
 }
 
-.stts p{
+.stts p {
   color: white;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 20px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-.content-main .content-topsoccer{
+.content-main .content-goalsRound {
   width: 40%;
-  height: 550px;
-  background-color: green;
+  height: 150vh;
 }
 
+.content-topsoccer {
+  width: 100%;
+  height: 38vh;
+  display: flex;
+  flex-direction: column;
+}
 
+.content-topsoccer .header {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.header h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.header .stats {
+  width: 260px;
+  height: 100%;
+  background-color: #151517;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stats p {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.list-topsoccer .line-player {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b1e;
+  border-radius: 10px 0 10px 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.line-player .image {
+  width: 70px;
+  height: 100%;
+  background-color: #151517;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-player .image img {
+  width: 70px;
+  height: 70px;
+}
+
+.line-player .image h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.line-player .data-player {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data-player .name {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.name h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.data-player .stats {
+  width: 270px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content-rounds {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-rounds .header {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content-rounds .list-rounds {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.list-rounds .square-round {
+  width: 280px;
+  height: 130px;
+  background-color: #151517;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.square-round .game {
+  width: 230px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.game .team {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.game .team img {
+  width: 60px;
+  height: 60px;
+}
+
+.game .team .line {
+  width: 55px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #1b1b1e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .line p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.game .result {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result .scoreboard h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.result .hour {
+  width: 65px;
+  height: 25px;
+  background-color: #1b1b1e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.result .hour h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.result .finished {
+  background-color: #6a9458;
+}
+
+.result .pending {
+  background-color: #eac658;
+}
