@@ -181,7 +181,7 @@ html {
 .center .content-players .listPlayers{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -215,7 +215,7 @@ html {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .square-player .top-player{

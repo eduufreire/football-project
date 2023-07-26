@@ -68,7 +68,7 @@ addEventListener("load", () => {
             };
             image.onerror = () => {
               urlImagePlayer.push(
-                `https://www.pngitem.com/pimgs/m/551-5510463_default-user-image-png-transparent-png.png`
+                `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8mQZEK8yWW_HLrhFXAv_r1QlXmU0ZIJnrvw&usqp=CAU`
               );
             };
           });
