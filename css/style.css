@@ -13,6 +13,14 @@ html {
   background-color: #0e0e10;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 .center {
   width: 80%;
 }
@@ -427,4 +435,17 @@ a {
 
 .result .pending {
   background-color: #eac658;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+a:hover, a:visited, a:link, a:checked, a:active {
+  color: white;
 }
