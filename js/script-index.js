@@ -1,16 +1,34 @@
-const apiKey =
-  "008ab88c33c608495d5ac03d1f1a3a23248c2b058e502a5003ebc167ea767ea7";
+const apiKey = "008ab88c33c608495d5ac03d1f1a3a23248c2b058e502a5003ebc167ea767ea7";
+const btnSerieA = document.getElementById('btnSerieA')
+const btnSerieB = document.getElementById('btnSerieB')
 
-addEventListener("load", () => {
+function setSerieA(){
+  leagueId = 99
+  listData()
+}
+
+function setSerieB(){
+  leagueId = 75
+  listData()
+}
+
+
+var listData = () => {
+
   //Listagem da tabela
   fetch(
-    `https://apiv3.apifootball.com/?action=get_standings&league_id=99&APIkey=${apiKey}`
+    `https://apiv3.apifootball.com/?action=get_standings&league_id=${leagueId}&APIkey=${apiKey}`
   )
     .then((resp) => resp.json())
     .then(function (resp) {
+
+      sessionStorage.setItem('league', resp[0].league_name)
+      leagueName.innerHTML = sessionStorage.getItem('league').toUpperCase()
+      listarTimes.innerHTML = ''
+      
       resp.forEach((t) => {
         listarTimes.innerHTML += ` 
-          <a href="./team.html?team_id=${t.team_id}">
+          <a href="./team.html?team_id=${t.team_id}&league_id=${leagueId}">
           <div class="line-team">
 
             <div class="pos">
@@ -50,7 +68,7 @@ addEventListener("load", () => {
   //Listagem dos artilheiros
   var urlImagePlayer = [];
   fetch(
-    `https://apiv3.apifootball.com/?action=get_topscorers&league_id=99&APIkey=${apiKey}`
+    `https://apiv3.apifootball.com/?action=get_topscorers&league_id=${leagueId}&APIkey=${apiKey}`
   )
     .then((resp) => resp.json())
     .then(async (data) => {
@@ -129,7 +147,7 @@ addEventListener("load", () => {
     }-${date7DaysAgo.getDate()}`;
 
     fetch(
-      `https://apiv3.apifootball.com/?action=get_events&from=${sevenDaysAgo}&to=${today}&league_id=99&APIkey=${apiKey}`
+      `https://apiv3.apifootball.com/?action=get_events&from=${sevenDaysAgo}&to=${today}&league_id=${leagueId}&APIkey=${apiKey}`
     )
       .then((resp) => resp.json())
       .then((data) => {
@@ -185,4 +203,4 @@ addEventListener("load", () => {
   };
 
   listRounds();
-});
+}

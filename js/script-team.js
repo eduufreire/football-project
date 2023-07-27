@@ -1,17 +1,22 @@
 let apiKey = "008ab88c33c608495d5ac03d1f1a3a23248c2b058e502a5003ebc167ea767ea7";
-let teamID = 0;
+let teamID = 0; 
+let leagueId = 99
 
 addEventListener("load", () => {
   var query = location.search.slice(1);
-  var values = query.split("=");
-  teamID = values[1];
+  var values = query.split("&");
+
+  teamID = values[0].split("=")[1]
+  leagueId = values[1].split("=")[1]
 
   fetch(
-    `https://apiv3.apifootball.com/?action=get_teams&league_id=99&team_id=${teamID}&APIkey=${apiKey}`
+    `https://apiv3.apifootball.com/?action=get_teams&league_id=${leagueId}&team_id=${teamID}&APIkey=${apiKey}`
   )
     .then((resp) => resp.json())
     .then((data) => {
       var playersTeam = data[0].players;
+      
+      leagueName.innerHTML = sessionStorage.getItem('league').toUpperCase()
 
       playersTeam.forEach((p) => {
         // Verificar se a foto foi carregada ou não
@@ -113,7 +118,7 @@ addEventListener("load", () => {
 
 
   fetch(
-    `https://apiv3.apifootball.com/?action=get_standings&league_id=99&APIkey=${apiKey}`
+    `https://apiv3.apifootball.com/?action=get_standings&league_id=${leagueId}&APIkey=${apiKey}`
   )
     .then((resp) => resp.json())
     .then((data) => {

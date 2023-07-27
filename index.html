@@ -12,11 +12,18 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  
+
   <body>
     <div class="slogan-project">
       <div class="center">
-        <h1>BRASILEIRÃO SÉRIE A - 2023</h1>
+        <div class="title">
+          <h1>BRASILEIRÃO <span id="leagueName">SÉRIE A</span></h1>
+        </div>
+
+        <div class="buttons">
+          <button onclick="setSerieA()">Série A</button>
+          <button onclick="setSerieB()">Série B</button>
+        </div>
       </div>
     </div>
 
@@ -34,7 +41,38 @@
             </div>
           </div>
 
-          <div class="data-teams" id="listarTimes"></div>
+          <div class="data-teams" id="listarTimes">
+            <a href="">
+              <div class="line-team">
+                <div class="pos">
+                  <h1>1</h1>
+                </div>
+
+                <div class="name-team">
+                  <div class="image">
+                    <img
+                      src="https://images.vexels.com/media/users/3/146850/isolated/preview/b314541f49ce483dd4c47d0142a47f77-iacute-cone-de-bola-de-futebol-cl-aacute-ssico-by-vexels.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <h1>Team Name</h1>
+                  </div>
+                </div>
+
+                <div class="stats-team">
+                  <div class="stts">
+                    <p>99</p>
+                    <p>|</p>
+                    <p>99</p>
+                    <p>99</p>
+                    <p>99</p>
+                    <p>99</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
 
         <div class="content-goalsRound">
@@ -48,15 +86,69 @@
               </div>
             </div>
 
-            <div class="list-topsoccer" id="listarJogadores"></div>
+            <div class="list-topsoccer" id="listarJogadores">
+              <div class="line-player">
+                <div class="image">
+                  <img
+                    src="https://images.vexels.com/media/users/3/146850/isolated/preview/b314541f49ce483dd4c47d0142a47f77-iacute-cone-de-bola-de-futebol-cl-aacute-ssico-by-vexels.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="data-player">
+                  <div class="name">
+                    <h1>Player Name</h1>
+                  </div>
+
+                  <div class="stats">
+                    <p>99</p>
+                    <p>|</p>
+                    <p>99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="content-rounds">
             <div class="header">
-              <h1>Rodada - <span id="dataRodada"></span></h1>
+              <h1>Rodada - <span id="dataRodada">01/01 | 01/02</span></h1>
             </div>
 
             <div class="list-rounds" id="listarRodada">
+              <div class="square-round">
+                <div class="game">
+                  <div class="team">
+                    <img
+                      src="https://images.vexels.com/media/users/3/146850/isolated/preview/b314541f49ce483dd4c47d0142a47f77-iacute-cone-de-bola-de-futebol-cl-aacute-ssico-by-vexels.png"
+                      alt="0"
+                    />
+                    <div class="line">
+                      <p>5-5-5</p>
+                    </div>
+                  </div>
+
+                  <div class="result">
+                    <div class="scoreboard">
+                      <h1>0 x 0</h1>
+                    </div>
+
+                    <div class="hour finished">
+                      <h1>21:00</h1>
+                    </div>
+                  </div>
+
+                  <div class="team">
+                    <img
+                      src="https://images.vexels.com/media/users/3/146850/isolated/preview/b314541f49ce483dd4c47d0142a47f77-iacute-cone-de-bola-de-futebol-cl-aacute-ssico-by-vexels.png"
+                      alt="0"
+                    />
+                    <div class="line">
+                      <p>5-5-5</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
