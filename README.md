@@ -13,6 +13,10 @@
     API Utilizada: https://apifootball.com
   </p>
 
+  <h1>📌 Amostra</h1>
+  
+https://github.com/eduufreire/football-project/assets/125585132/ddf7175b-4d81-4ee3-9ae2-7d15b246fbdf
+
 
  <h1> 📌 Funcionalidades </h1>
   <p>- Tabela com posição, pontuação, partidas jogadas, vitórias, empates e derrotas:</p>
@@ -20,6 +24,8 @@
   
   <p>- Exibição dos artilheiros da competição:</p>
   <img src="https://cdn.discordapp.com/attachments/1011811510751858769/1134101896177647646/image.png">
+
+
 
   <p>- Exibição dos jogos da semana:</p>
   <img src="https://cdn.discordapp.com/attachments/1011811510751858769/1134102372260528158/image.png">
@@ -29,6 +35,7 @@
 
 
 ##
+
 
 
 
